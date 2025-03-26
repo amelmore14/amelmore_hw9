@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Business Analytics Student Survey</title>
+    <title>Business Analytics Student Survey - Thank You</title>
 
     <!-- Bootstrap 5.3 CSS -->
     <link
@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
 
+    <!-- Custom Styles -->
     <style>
       body {
         background-color: #f8f9fa;
@@ -41,52 +42,27 @@
       .title {
         margin-bottom: 20px;
       }
-      .btn-start {
-        display: block;
-        width: 100%;
-        font-size: 1.2rem;
-        padding: 10px;
-        margin-top: 20px;
-      }
-      .help-btn {
+      .message {
+        font-size: 1.25rem;
         margin-top: 20px;
       }
     </style>
   </head>
   <body>
     <div class="container">
+      <!-- Heading -->
       <div class="title">
         <h1>Business Analytics Student Survey</h1>
       </div>
 
-      <p class="lead">
-        This survey should take you less than one minute to complete.
-      </p>
-
-      <p>
-        The department will use the results to help us better understand the
-        BAIS student population.
-      </p>
-
-      <a href="amelmore_p1.html" class="btn btn-primary btn-start">
-        <i class="fas fa-arrow-right"></i> Start Survey
-      </a>
-
-      <!-- Help Button with Tooltip -->
-      <div class="help-btn">
-        <button
-          type="button"
-          class="btn btn-info"
-          data-bs-toggle="tooltip"
-          data-bs-placement="top"
-          title="Click 'Start Survey' to begin!"
-        >
-          Help
-        </button>
+      <!-- Thank You Message -->
+      <div class="message">
+        <h2>Thank you!!!</h2>
+        <p>Your response has been saved.</p>
       </div>
     </div>
 
-    <!-- Bootstrap 5.3 JS (for Tooltip functionality) -->
+    <!-- Bootstrap 5.3 JS (for functionality) -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-cuQRLjkl31D/psitIoPMtdl5P35X0pD8Y2zGnPjWbbIZ3FDEz01uWsjNlMYyDhzJ"
@@ -97,15 +73,5 @@
       integrity="sha384-8H5HUS4h8c4PYl8BwVjhf7v2XrBL9I9pWiOlgLgE1W7sdgB7z5j0ok2g5qLrHTI3"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Initialize Tooltip -->
-    <script>
-      var tooltipTriggerList = [].slice.call(
-        document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      );
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-      });
-    </script>
   </body>
 </html>

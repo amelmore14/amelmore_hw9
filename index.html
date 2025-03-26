@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Business Analytics Student Survey</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEJ6c7v5zE6GcPbsrL6kImE2IAB7r0zkp54oRUwYr5+zm5TSbpFgqZ3zdJLOk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome for Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles (optional for any additional styling) -->
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+      .container {
+        max-width: 600px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .title {
+        margin-bottom: 20px;
+      }
+      .btn-start {
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 10px;
+        margin-top: 20px;
+      }
+      .help-btn {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Business Analytics Student Survey</h1>
+      </div>
+
+      <p class="lead">
+        This survey should take you less than one minute to complete.
+      </p>
+
+      <p>
+        The department will use the results to help us better understand the
+        BAIS student population.
+      </p>
+
+      <!-- Start Survey Button -->
+      <a href="amelmore_p1.html" class="btn btn-primary btn-start">
+        <i class="fas fa-arrow-right"></i> Start Survey
+      </a>
+
+      <!-- Help Button with Tooltip -->
+      <div class="help-btn">
+        <button
+          type="button"
+          class="btn btn-info"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Click 'Start Survey' to begin!"
+        >
+          Help
+        </button>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5.3 JS (for Tooltip functionality) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-cuQRLjkl31D/psitIoPMtdl5P35X0pD8Y2zGnPjWbbIZ3FDEz01uWsjNlMYyDhzJ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-8H5HUS4h8c4PYl8BwVjhf7v2XrBL9I9pWiOlgLgE1W7sdgB7z5j0ok2g5qLrHTI3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Initialize Tooltip -->
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>

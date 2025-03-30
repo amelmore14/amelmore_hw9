@@ -49,6 +49,30 @@
       .help-btn {
         margin-top: 20px;
       }
+
+      /* Fixing Font Awesome Animation and Transform issues */
+      .fa-beat {
+        --fa-animation-delay: 0s; /* Corrected animation-delay */
+      }
+
+      .fa-beat-fade,
+      .fa-fade {
+        --fa-animation-delay: 0s; /* Corrected animation-delay */
+      }
+
+      .fa-flip {
+        --fa-animation-delay: 0s; /* Corrected animation-delay */
+      }
+
+      .fa-spin {
+        --fa-animation-delay: 0s; /* Corrected animation-delay */
+      }
+
+      .fa-rotate-by {
+        transform: rotate(
+          var(--fa-rotate-angle, 0deg)
+        ); /* Corrected transform with valid angle */
+      }
     </style>
   </head>
   <body>
